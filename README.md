@@ -64,13 +64,22 @@ These results match the behavior of an **ideal random process**.
 QuantumSim-QPRNG/
 │
 ├── src/
-│   ├── QuantumSimQPRNG/
-│   │   ├── DoubleStream.cs
-│   │   ├── QubitState.cs
+│   ├── QPRNG-Q1/
+│   │   ├── QPRNG-Q1
+│   │   │   ├── Entropie
+│   │   │   │   └── EntropieTest.cs
+│   │   │   ├── Mathematic
+│   │   │   │   ├── Cx.cs
+│   │   │   │   ├── DoubleStream.cs
+│   │   │   │   ├── HadamardGate.cs
+│   │   │   │   ├── IQuantumGate.cs
+│   │   │   │   └── QubitState.cs
+│   │   │   └── QPRNG.cs
 │   │   ├── Gates/
-│   │   ├── RNG/
-│   │   └── QuantumSimQPRNG.csproj
-│   └── QuantumSimQPRNG.Tests/
+│   │   ├── Program.cs
+│   │   ├── QPRNG-Q1.csproj
+│   │   └── QPRNG-Q1.slnx
+│   └── QPRNG-Multi-Qubits/
 │       ├── EntropyTests.cs
 │       ├── BitPackingTests.cs
 │       └── QuantumSimQPRNG.Tests.csproj
