@@ -1,0 +1,96 @@
+﻿
+
+using System.Diagnostics;
+
+namespace QPRNG_Parallel.Test;
+
+using Pipeline;
+using Entropie.Test;
+
+public class Program
+{
+  public static void Main()
+  {
+    Test_QPRNG_Parallel();
+    Test_Entropie_Analyze();
+
+    Console.WriteLine();
+    Console.WriteLine("FINISH");
+    Console.ReadLine();
+  }
+
+  private static void Test_QPRNG_Parallel()
+  {
+    var bits = 10;
+    var flag = false;
+    var max_bits = 100_000_000;
+
+    while (bits <= max_bits)
+    {
+      Test_QPRNG_Parallel(bits);
+      bits *= 10;
+    }
+    Console.WriteLine();
+    Console.WriteLine();
+  }
+
+  private static void Test_QPRNG_Parallel(int bits)
+  {
+    var qrng = new QPRNG();
+
+    Console.WriteLine("=== PARALLEL QPRNG Spec ===");
+
+    var sw = Stopwatch.StartNew();
+    var result = qrng.GenerateBits(bits);
+    sw.Stop();
+
+    Console.WriteLine($"Parallel generated mn: {result.Length:n0} bits; t = {sw.ElapsedMilliseconds} ms; ticks = {sw.ElapsedTicks:n0}");
+    Console.WriteLine();
+  }
+
+  private static void Test_Entropie_Analyze()
+  {
+
+    var qrng = new QPRNG();
+    var bits = qrng.GenerateBits(10_000_000);
+    Console.WriteLine($"Entropie Analyze Data Bits: size = {bits.Length:n0}");
+    Console.WriteLine($"*********************************************\n");
+
+    var (p0, p1) = EntropieTest.AnalyzeBitBias(bits);
+    Console.WriteLine($"BitBias: p0 = {p0:F6}, p1 = {p1:F6}\n");
+
+    var runs = EntropieTest.CountRuns(bits);
+    Console.WriteLine($"Count Runs: {runs:n0}; delta = {(bits.Length / 2) - runs}\n");
+
+    var h = EntropieTest.ShannonEntropy(bits);
+    // max 1.0 für perfekte Bits
+    Console.WriteLine($"Shannon Entropy per bit: {h:F6} (max 1.0)\n");
+
+    Console.WriteLine("Autokorrelation (Bits):");
+    for (int lag = 1; lag <= 8; lag++)
+    {
+      var ac = EntropieTest.AutoCorrelation(bits, lag);
+
+      // Anteil gleicher Bits – ideal wäre ac = ~0.5
+      Console.WriteLine($"lag {lag}: {ac:F6}");
+    }
+
+    Console.WriteLine(); Console.WriteLine();
+
+    var bytes = qrng.GenerateBytes(1_000_000);
+    Console.WriteLine($"Entropie Analyze Data Bytes: size = {bytes.Length:n0}");
+    Console.WriteLine($"*********************************************\n");
+
+    Console.WriteLine("Byte‑Histogramm + Entropie per Byte:");
+
+    // max 8.0 für perfekte Bytes
+    var hbytes = EntropieTest.ShannonEntropyBytes(bytes);
+    Console.WriteLine($"Entropy per byte: {hbytes:F4} (max 8.0)");
+
+    var hist = EntropieTest.ByteHistogram(bytes);
+    for (int i = 0; i < 16; i++)
+      Console.WriteLine($"{i:X2}: {hist[i]}");
+
+    Console.WriteLine(); Console.WriteLine();
+  }
+}
