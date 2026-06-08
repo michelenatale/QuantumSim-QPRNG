@@ -1,6 +1,10 @@
 # QuantumSim‑QPRNG  
 **Parallel Quantum‑Inspired Random Bit Generator**
 
+**Status**: ✅   
+**Version**: 0.0.1   
+**Last Updated**: 2026.06.08
+
 [German-Version](Docs/Readme-DE.md)
 
 QuantumSim‑QPRNG is an experimental high‑performance project that generates random bits using a quantum‑inspired simulation model.  
