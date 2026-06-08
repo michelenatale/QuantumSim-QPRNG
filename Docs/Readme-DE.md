@@ -146,7 +146,7 @@ Performance‑Optimierungen, SIMD‑Versionen und GPU‑Backends sind mögliche 
 **Autor und leitender Architekt**  
 
 *Entwickelt von Michele Natale 2026*  
-- QPRNG-Q1 and Cryptography Engineering   
+- QPRNG-Q1 und Cryptography Engineering   
 - Konzept, Testarchitektur, Dokumentation, Implementierung
 
 **Betreuer**  
