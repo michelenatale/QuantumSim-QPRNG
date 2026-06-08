@@ -72,8 +72,8 @@ QuantumSim-QPRNG/
 │   │   │   │   ├── Cx.cs
 │   │   │   │   ├── DoubleStream.cs
 │   │   │   │   ├── HadamardGate.cs
-│   │   │   │   ├── IQuantumGate.cs
 │   │   │   │   └── QubitState.cs
+│   │   │   ├── IQuantumGate.cs
 │   │   │   └── QPRNG.cs
 │   │   ├── Program.cs
 │   │   ├── QPRNG-Q1.csproj
