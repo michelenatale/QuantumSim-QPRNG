@@ -6,7 +6,7 @@
 
 **Parallel Quantum‑Inspired Random Bit Generator**
 
-[English-Version](https://github.com/michelenatale/QuantumSim-QPRNG/edit/main/README.md)
+[English-Version](https://github.com/michelenatale/QuantumSim-QPRNG/blob/main/README.md)
 
 QuantumSim‑QPRNG ist ein experimentelles, hochperformantes Testprojekt zur Erzeugung von Zufallsbits durch eine quanteninspirierte Simulation.  
 
