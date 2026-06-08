@@ -64,20 +64,29 @@ Diese Werte entsprechen einem **nahezu idealen Zufallsprozess**.
 QuantumSim-QPRNG/
 │
 ├── src/
-│   ├── QuantumSimQPRNG/
-│   │   ├── DoubleStream.cs
-│   │   ├── QubitState.cs
+│   ├── QPRNG-Q1/
+│   │   ├── QPRNG-Q1
+│   │   │   ├── Entropie
+│   │   │   │   └── EntropieTest.cs
+│   │   │   ├── Mathematic
+│   │   │   │   ├── Cx.cs
+│   │   │   │   ├── DoubleStream.cs
+│   │   │   │   ├── HadamardGate.cs
+│   │   │   │   ├── IQuantumGate.cs
+│   │   │   │   └── QubitState.cs
+│   │   │   └── QPRNG.cs
 │   │   ├── Gates/
-│   │   ├── RNG/
-│   │   └── QuantumSimQPRNG.csproj
-│   └── QuantumSimQPRNG.Tests/
+│   │   ├── Program.cs
+│   │   ├── QPRNG-Q1.csproj
+│   │   └── QPRNG-Q1.slnx
+│   └── QPRNG-Multi-Qubits/
 │       ├── EntropyTests.cs
 │       ├── BitPackingTests.cs
 │       └── QuantumSimQPRNG.Tests.csproj
 │
 ├── docs/
 │   ├── README_QPRNG.md
-│   ├── Quanteninformatik/
+│   ├── Quanteninformatik/   # German quantum computing script
 │   │   ├── Kapitel_01_Qubits.md
 │   │   ├── Kapitel_02_Amplituden.md
 │   │   ├── Kapitel_03_Superposition.md
