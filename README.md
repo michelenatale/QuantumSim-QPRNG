@@ -75,7 +75,6 @@ QuantumSim-QPRNG/
 │   │   │   │   ├── IQuantumGate.cs
 │   │   │   │   └── QubitState.cs
 │   │   │   └── QPRNG.cs
-│   │   ├── Gates/
 │   │   ├── Program.cs
 │   │   ├── QPRNG-Q1.csproj
 │   │   └── QPRNG-Q1.slnx
