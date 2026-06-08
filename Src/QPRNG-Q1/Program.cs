@@ -22,7 +22,6 @@ public class Program
   private static void Test_QPRNG_Parallel()
   {
     var bits = 10;
-    var flag = false;
     var max_bits = 100_000_000;
 
     while (bits <= max_bits)
@@ -36,12 +35,12 @@ public class Program
 
   private static void Test_QPRNG_Parallel(int bits)
   {
-    var qrng = new QPRNG();
+    var qprng = new QPRNG();
 
     Console.WriteLine("=== PARALLEL QPRNG Spec ===");
 
     var sw = Stopwatch.StartNew();
-    var result = qrng.GenerateBits(bits);
+    var result = qprng.GenerateBits(bits);
     sw.Stop();
 
     Console.WriteLine($"Parallel generated mn: {result.Length:n0} bits; t = {sw.ElapsedMilliseconds} ms; ticks = {sw.ElapsedTicks:n0}");
@@ -51,8 +50,8 @@ public class Program
   private static void Test_Entropie_Analyze()
   {
 
-    var qrng = new QPRNG();
-    var bits = qrng.GenerateBits(10_000_000);
+    var qprng = new QPRNG();
+    var bits = qprng.GenerateBits(10_000_000);
     Console.WriteLine($"Entropie Analyze Data Bits: size = {bits.Length:n0}");
     Console.WriteLine($"*********************************************\n");
 
@@ -77,7 +76,7 @@ public class Program
 
     Console.WriteLine(); Console.WriteLine();
 
-    var bytes = qrng.GenerateBytes(1_000_000);
+    var bytes = qprng.GenerateBytes(1_000_000);
     Console.WriteLine($"Entropie Analyze Data Bytes: size = {bytes.Length:n0}");
     Console.WriteLine($"*********************************************\n");
 
