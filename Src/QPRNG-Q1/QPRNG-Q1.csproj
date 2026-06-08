@@ -7,6 +7,15 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <Platforms>AnyCPU;x64</Platforms>
+
+
+    <Authors>© Michele Natale 2026</Authors>
+    <Product>© QPRNG-Q1</Product>
+    <Company>© Michele Natale 2026</Company>
+    <Description>
+      © QPRNG-Q1 2026 - QuantumSim‑QPRNG – Parallel Quantum‑Inspired Random Bit Generator
+    </Description>
+    <Copyright>© QPRNG-Q1 2026 Created by © Michele Natale 2026.</Copyright>
   </PropertyGroup>
 
 </Project>
