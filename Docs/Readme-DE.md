@@ -3,8 +3,8 @@
 **Parallel Quantum‑Inspired Random Bit Generator**
 
 QuantumSim‑QPRNG ist ein experimentelles, hochperformantes Testprojekt zur Erzeugung von Zufallsbits durch eine quanteninspirierte Simulation.  
-Es kombiniert:
 
+Es kombiniert:
 - Qubit‑Simulation (Amplitude, Superposition, Messung)
 - Parallelisierte Bit‑Erzeugung
 - Vorberechnete Double‑Streams für maximale Geschwindigkeit
@@ -97,14 +97,17 @@ QuantumSim-QPRNG/
 ## 🧪 Beispiel: Bits generieren
 
 ```csharp
-int count = 10_000_000;
-var bits = QuantumBitGenerator.Generate(count);
+var qprng = new QPRNG();
+var count = 100_000_000;
+var bits = qprng.GenerateBits(count);
 ```
 
-## 🧪 Beispiel: Bits zu Bytes packen
+## 🧪 Beispiel: Bytes generieren
 
 ```csharp
-var bytes = BitPacker.PackBitsToBytes(bits);
+var count = 1_000_000;
+var qprng = new QPRNG();
+var bytes = qprng.GenerateBytes(count);
 ```
 ---
 
@@ -140,8 +143,19 @@ Performance‑Optimierungen, SIMD‑Versionen und GPU‑Backends sind mögliche 
 
 ## 🙌 Autor
 
-Michele Natale
+**Autor und leitender Architekt**  
+
+*Entwickelt von Michele Natale 2026*  
+- QPRNG-Q1 and Cryptography Engineering   
+- Konzept, Testarchitektur, Dokumentation, Implementierung
+
+**Betreuer**  
+
+Michele Natale 2026  
+- Wartung, Weiterentwicklung, Fehlerbehebung, Release-Management
 
 Experimentiert mit Quanten‑Simulation, HPC und .NET‑Performance.
+
+GitHub: [https://github.com/michelenatale](https://github.com/michelenatale)
 
 ---
