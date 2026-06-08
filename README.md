@@ -1,9 +1,10 @@
 # QuantumSim‑QPRNG  
-**Parallel Quantum‑Inspired Random Bit Generator**
 
 **Status**: ✅   
 **Version**: 0.0.1   
 **Last Updated**: 2026.06.08
+
+**Parallel Quantum‑Inspired Random Bit Generator**
 
 [German-Version](Docs/Readme-DE.md)
 
