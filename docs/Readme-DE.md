@@ -144,7 +144,7 @@ QuantumSim-QPRNG nutzt HPC-Prinzipien, um Millionen quanteninspirierter Zufallsb
 
 ## 🇬🇧 English Version (Dokumentation)
 
-Eine vollständige deutschsprachige Version der Dokumentation finden Sie unter:
+Eine vollständige englischsprachige Version der Readme finden Sie unter:
 
 [Readme English](https://github.com/michelenatale/QuantumSim-QPRNG/blob/main/README.md)
 
