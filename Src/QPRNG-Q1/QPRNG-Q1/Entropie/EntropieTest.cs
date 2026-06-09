@@ -1,5 +1,5 @@
 ﻿
-namespace QPRNG_Parallel.Entropie.Test;
+namespace QPRNG_Q1.Entropie.Test;
 
 public sealed class EntropieTest
 {

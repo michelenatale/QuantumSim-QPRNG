@@ -2,7 +2,7 @@
 
 using System.Diagnostics;
 
-namespace QPRNG_Parallel.Test;
+namespace QPRNG_Q1.Test;
 
 using Pipeline;
 using Entropie.Test;
@@ -11,7 +11,8 @@ public class Program
 {
   public static void Main()
   {
-    Test_QPRNG_Parallel();
+    Test_QPRNG_Bits();
+    Test_QPRNG_Bytes();
     Test_Entropie_Analyze();
 
     Console.WriteLine();
@@ -19,37 +20,64 @@ public class Program
     Console.ReadLine();
   }
 
-  private static void Test_QPRNG_Parallel()
+  private static void Test_QPRNG_Bits()
   {
     var bits = 10;
     var max_bits = 100_000_000;
 
     while (bits <= max_bits)
     {
-      Test_QPRNG_Parallel(bits);
+      Test_QPRNG_Bits(bits);
       bits *= 10;
     }
     Console.WriteLine();
     Console.WriteLine();
   }
 
-  private static void Test_QPRNG_Parallel(int bits)
+  private static void Test_QPRNG_Bytes()
+  {
+    var cnt = 10;
+    var max_bits = 10_000_000;
+
+    while (cnt <= max_bits)
+    {
+      Test_QPRNG_Bytes(cnt);
+      cnt *= 10;
+    }
+    Console.WriteLine();
+    Console.WriteLine();
+  }
+
+  private static void Test_QPRNG_Bytes(int count)
   {
     var qprng = new QPRNG();
 
-    Console.WriteLine("=== PARALLEL QPRNG Spec ===");
+    Console.WriteLine("=== QPRNG Bytes ===");
+
+    var sw = Stopwatch.StartNew();
+    var result = qprng.GenerateBytes(count);
+    sw.Stop();
+
+    Console.WriteLine($"Generated: {result.Length:n0} bytes; t = {sw.ElapsedMilliseconds} ms; ticks = {sw.ElapsedTicks:n0}");
+    Console.WriteLine();
+  }
+
+  private static void Test_QPRNG_Bits(int bits)
+  {
+    var qprng = new QPRNG();
+
+    Console.WriteLine("=== QPRNG Bits ===");
 
     var sw = Stopwatch.StartNew();
     var result = qprng.GenerateBits(bits);
     sw.Stop();
 
-    Console.WriteLine($"Parallel generated mn: {result.Length:n0} bits; t = {sw.ElapsedMilliseconds} ms; ticks = {sw.ElapsedTicks:n0}");
+    Console.WriteLine($"Generated: {result.Length:n0} bits; t = {sw.ElapsedMilliseconds} ms; ticks = {sw.ElapsedTicks:n0}");
     Console.WriteLine();
   }
 
   private static void Test_Entropie_Analyze()
   {
-
     var qprng = new QPRNG();
     var bits = qprng.GenerateBits(10_000_000);
     Console.WriteLine($"Entropie Analyze Data Bits: size = {bits.Length:n0}");
@@ -93,3 +121,4 @@ public class Program
     Console.WriteLine(); Console.WriteLine();
   }
 }
+

@@ -1,6 +1,6 @@
 ﻿
 
-namespace QPRNG_Parallel.Mathematic;
+namespace QPRNG_Q1.Mathematic;
 
 public sealed class HadamardGate : IQuantumGate
 {

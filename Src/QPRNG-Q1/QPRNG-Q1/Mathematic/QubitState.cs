@@ -1,8 +1,10 @@
 ﻿
- 
 
-namespace QPRNG_Parallel.Mathematic;
 
+
+namespace QPRNG_Q1.Mathematic;
+
+using Pipeline;
 
 public sealed class QubitState //Qubit-Zustand
 {

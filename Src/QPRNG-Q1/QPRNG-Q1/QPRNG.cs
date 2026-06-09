@@ -2,7 +2,7 @@
 using System.Security.Cryptography;
 
 
-namespace QPRNG_Parallel.Pipeline;
+namespace QPRNG_Q1.Pipeline;
 
 using Mathematic;
 
