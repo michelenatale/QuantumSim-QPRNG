@@ -74,11 +74,11 @@ QuantumSim-QPRNG /
 │   │   │   │   ├── DoubleStream.cs
 │   │   │   │   └── IQuantumGate.cs
 │   │   │   └── QPRNG.cs
-│   │   ├── QPRNG-Q1.csproj
-│   └── QPRNG-Multi-Qubits /
-│       ├── EntropyTests.cs
-│       ├── BitPackingTests.cs
-│       └── QuantumSimQPRNG.Tests.csproj
+│   │   └── QPRNG-Q1.csproj
+│   └── QPRNGMultiQubits /
+│       ├── xxxxxxxxxx.cs
+│       ├── yyyyyyyyyy.cs
+│       └── QPRNGMultiQubits.csproj
 │
 ├── docs /
 │   ├── README_QPRNG.md
@@ -93,13 +93,17 @@ QuantumSim-QPRNG /
 │   │   ├── Kapitel_08_GHZ_Bell.md
 │   │   ├── Kapitel_09_QRNG.md
 │   │   └── Kapitel_10_Simulationstechniken.md
-│   └── images/
+│   └── images /
 │
-├── tests/
+├── tests /
 │   ├── TestQPRNG-Q1 /
 │   │   ├── Program.cs
-│   │   ├── TestQPRNG-Q1.csproj
-│   └── TestQPRNG-Q1.sln
+│   │   └── TestQPRNG-Q1.csproj
+│   ├── TestQPRNGMultiQubits /
+│   │   ├── Program.cs
+│   │   └── TestQPRNGMultiQubits.csproj
+│   ├── TestQPRNG-Q1.sln
+│   └── TestQPRNGMultiQubits.sln
 │
 ├── LICENSE
 └── README.md
