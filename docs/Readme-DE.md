@@ -59,31 +59,30 @@ Diese Werte entsprechen einem **nahezu idealen Zufallsprozess**.
 ## 🧩 Projektstruktur
 
 ```
-QuantumSim-QPRNG/
+QuantumSim-QPRNG /
 │
-├── src/
-│   ├── QPRNG-Q1/
-│   │   ├── QPRNG-Q1
+├── src /
+│   ├── QPRNG-Q1 /
+│   │   ├── QPRNG-Q1 /
 │   │   │   ├── Entropie
 │   │   │   │   └── EntropieTest.cs
-│   │   │   ├── Mathematic
+│   │   │   ├── Math /
 │   │   │   │   ├── Cx.cs
-│   │   │   │   ├── DoubleStream.cs
 │   │   │   │   ├── HadamardGate.cs
 │   │   │   │   └── QubitState.cs
-│   │   │   ├── IQuantumGate.cs
+│   │   │   ├── Pipeline /
+│   │   │   │   ├── DoubleStream.cs
+│   │   │   │   └── IQuantumGate.cs
 │   │   │   └── QPRNG.cs
-│   │   ├── Program.cs
-│   │   ├── QPRNG-Q1.csproj
-│   │   └── QPRNG-Q1.slnx
-│   └── QPRNG-Multi-Qubits/
-│       ├── EntropyTests.cs
-│       ├── BitPackingTests.cs
-│       └── QuantumSimQPRNG.Tests.csproj
+│   │   └── QPRNG-Q1.csproj
+│   └── QPRNGMultiQubits /
+│       ├── xxxxxxxxxx.cs
+│       ├── yyyyyyyyyy.cs
+│       └── QPRNGMultiQubits.csproj
 │
-├── docs/
+├── docs /
 │   ├── README_QPRNG.md
-│   ├── Quanteninformatik/   # German quantum computing script
+│   ├── Quanteninformatik /   # German quantum computing script
 │   │   ├── Kapitel_01_Qubits.md
 │   │   ├── Kapitel_02_Amplituden.md
 │   │   ├── Kapitel_03_Superposition.md
@@ -94,12 +93,17 @@ QuantumSim-QPRNG/
 │   │   ├── Kapitel_08_GHZ_Bell.md
 │   │   ├── Kapitel_09_QRNG.md
 │   │   └── Kapitel_10_Simulationstechniken.md
-│   └── images/
+│   └── images /
 │
-├── examples/
-│   ├── Example_BitGeneration.cs
-│   ├── Example_EntropyTest.cs
-│   └── Example_BytePacking.cs
+├── tests /
+│   ├── TestQPRNG-Q1 /
+│   │   ├── Program.cs
+│   │   └── TestQPRNG-Q1.csproj
+│   ├── TestQPRNGMultiQubits /
+│   │   ├── Program.cs
+│   │   └── TestQPRNGMultiQubits.csproj
+│   ├── TestQPRNG-Q1.sln
+│   └── TestQPRNGMultiQubits.sln
 │
 ├── LICENSE
 └── README.md
