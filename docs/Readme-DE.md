@@ -186,6 +186,6 @@ Quantum simulation, HPC (High‑Performance Computing), and .NET performance.
 Michele Natale (2026)  
 Maintenance, further development, bug fixing, and release management.
 
-GitHub: [https://github.com/michelenatale](https://github.com/michelenatale](https://github.com/michelenatale)
+GitHub: [github.com/michelenatale](https://github.com/michelenatale](https://github.com/michelenatale)
 
 ---
