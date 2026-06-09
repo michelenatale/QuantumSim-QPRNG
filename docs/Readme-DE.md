@@ -125,9 +125,24 @@ var bytes = qprng.GenerateBytes(count);
 ```
 ---
 
+## ⚡ High‑Performance Computing (HPC)
+
+Unter Hochleistungsrechnen versteht man Techniken und Architekturen, die darauf ausgelegt sind, groß angelegte Berechnungen mit maximaler Effizienz durchzuführen. 
+
+HPC konzentriert sich auf:
+- parallele Ausführung über mehrere CPU-Kerne hinweg  
+- effizienten Speicherzugriff und cache-optimierte Algorithmen  
+- vektorisierte Operationen (SIMD)  
+- numerische Verarbeitung mit hohem Durchsatz  
+- deterministische und reproduzierbare Leistung im großen Maßstab  
+
+QuantumSim-QPRNG nutzt HPC-Prinzipien, um Millionen quanteninspirierter Zufallsbits mit minimalem Overhead zu generieren, wobei parallele Messungen, vorberechnete Datenströme und optimiertes Bit-Packing zum Einsatz kommen.
+
+---
+
 ## 📘 Quanteninformatik‑Skript
 
-Im Ordner docs/Quanteninformatik befindet sich ein begleitendes Skript, das die Grundlagen der Quanteninformatik erklärt:
+Im Ordner [docs/Script](docs/Script) befindet sich ein begleitendes Skript, das die Grundlagen der Quanteninformatik erklärt:
 - Qubits
 - Amplituden
 - Superposition
@@ -155,21 +170,16 @@ Performance‑Optimierungen, SIMD‑Versionen und GPU‑Backends sind mögliche 
 
 ---
 
-## 🙌 Autor
+## 🙌 Author & Lead Architect
 
-**Autor und leitender Architekt**  
+Developed by Michele Natale (2026)  
+Quantum simulation, HPC (High‑Performance Computing), and .NET performance.
 
-*Entwickelt von Michele Natale 2026*  
-- QPRNG-Q1 und Cryptography Engineering   
-- Konzept, Testarchitektur, Dokumentation, Implementierung
+## 🔧 Maintainer
 
-**Betreuer**  
+Michele Natale (2026)  
+Maintenance, further development, bug fixing, and release management.
 
-Michele Natale 2026  
-- Wartung, Weiterentwicklung, Fehlerbehebung, Release-Management
-
-Experimentiert mit Quanten‑Simulation, HPC und .NET‑Performance.
-
-GitHub: [https://github.com/michelenatale](https://github.com/michelenatale)
+GitHub: [https://github.com/michelenatale](https://github.com/michelenatale](https://github.com/michelenatale)
 
 ---
