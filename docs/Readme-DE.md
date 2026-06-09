@@ -50,7 +50,7 @@ Das Projekt dient als Testlauf für schnelle, deterministische und reproduzierba
 - Entropy per bit: **1.000000**  
 - Entropy per byte: **7.9998**  
 - Autokorrelation (lag 1–8): alle ≈ 0.5  
-- Byte‑Histogramm: gleichmäßig verteilt
+- Byte‑Histogramm: gleichmässig verteilt
 
 Diese Werte entsprechen einem **nahezu idealen Zufallsprozess**.
 
@@ -129,14 +129,14 @@ var bytes = qprng.GenerateBytes(count);
 
 ## ⚡ High‑Performance Computing (HPC)
 
-Unter High‑Performance Computing (Hochleistungsrechnen) versteht man Techniken und Architekturen, die darauf ausgelegt sind, groß angelegte Berechnungen mit maximaler Effizienz durchzuführen. 
+Unter High‑Performance Computing (Hochleistungsrechnen) versteht man Techniken und Architekturen, die darauf ausgelegt sind, gross angelegte Berechnungen mit maximaler Effizienz durchzuführen. 
 
 HPC konzentriert sich auf:
 - parallele Ausführung über mehrere CPU-Kerne hinweg  
 - effizienten Speicherzugriff und cache-optimierte Algorithmen  
 - vektorisierte Operationen (SIMD)  
 - numerische Verarbeitung mit hohem Durchsatz  
-- deterministische und reproduzierbare Leistung im großen Maßstab  
+- deterministische und reproduzierbare Leistung im grossen Massstab  
 
 QuantumSim-QPRNG nutzt HPC-Prinzipien, um Millionen quanteninspirierter Zufallsbits mit minimalem Overhead zu generieren, wobei parallele Messungen, vorberechnete Datenströme und optimiertes Bit-Packing zum Einsatz kommen.
 
