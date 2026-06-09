@@ -81,8 +81,10 @@ QuantumSim-QPRNG /
 │       └── QPRNGMultiQubits.csproj
 │
 ├── docs /
-│   ├── README_QPRNG.md
-│   ├── Quanteninformatik /   # German quantum computing script
+│   ├── Images /
+│   ├── Script /
+│   │   ├── Quanteninformatik.pdf
+│   ├── QuantumInformationScience /
 │   │   ├── Kapitel_01_Qubits.md
 │   │   ├── Kapitel_02_Amplituden.md
 │   │   ├── Kapitel_03_Superposition.md
@@ -93,7 +95,7 @@ QuantumSim-QPRNG /
 │   │   ├── Kapitel_08_GHZ_Bell.md
 │   │   ├── Kapitel_09_QRNG.md
 │   │   └── Kapitel_10_Simulationstechniken.md
-│   └── images /
+│   └── README_QPRNG.md
 │
 ├── tests /
 │   ├── TestQPRNG-Q1 /
