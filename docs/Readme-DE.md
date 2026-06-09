@@ -129,7 +129,7 @@ var bytes = qprng.GenerateBytes(count);
 
 ## ⚡ High‑Performance Computing (HPC)
 
-Unter Hochleistungsrechnen versteht man Techniken und Architekturen, die darauf ausgelegt sind, groß angelegte Berechnungen mit maximaler Effizienz durchzuführen. 
+Unter High‑Performance Computing (Hochleistungsrechnen) versteht man Techniken und Architekturen, die darauf ausgelegt sind, groß angelegte Berechnungen mit maximaler Effizienz durchzuführen. 
 
 HPC konzentriert sich auf:
 - parallele Ausführung über mehrere CPU-Kerne hinweg  
