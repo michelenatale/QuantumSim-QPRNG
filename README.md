@@ -178,10 +178,12 @@ Future extensions may include:
 ---
 
 ## 🙌 Author & Lead Architect
+
 Developed by Michele Natale (2026)  
 Quantum simulation, HPC (High‑Performance Computing), and .NET performance.
 
 ## 🔧 Maintainer
+
 Michele Natale (2026)  
 Maintenance, further development, bug fixing, and release management.
 
