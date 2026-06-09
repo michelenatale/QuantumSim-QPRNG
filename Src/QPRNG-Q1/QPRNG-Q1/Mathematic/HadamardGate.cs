@@ -2,6 +2,8 @@
 
 namespace QPRNG_Q1.Mathematic;
 
+using Pipeline;
+
 public sealed class HadamardGate : IQuantumGate
 {
   private static readonly double InvSqrt2 =
