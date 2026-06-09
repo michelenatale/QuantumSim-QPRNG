@@ -144,7 +144,15 @@ QuantumSim‑QPRNG uses HPC principles to generate millions of quantum‑inspire
 
 ## 📘 Quanteninformatik Script (German)
 
-The folder docs/Quanteninformatik contains a German‑language educational script covering:
+The folder ## 🙌 Author & Lead Architect
+Developed by Michele Natale (2026)  
+Quantum simulation, HPC (High‑Performance Computing), and .NET performance.
+
+## 🔧 Maintainer
+Michele Natale (2026)  
+Maintenance, further development, bug fixing, and release management.
+
+GitHub: [https://github.com/michelenatale](https://github.com/michelenatale](https://github.com/michelenatale) contains a German‑language educational script covering:
 - Qubits
 - Amplitudes
 - Superposition
