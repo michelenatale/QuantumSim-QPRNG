@@ -6,8 +6,6 @@
 
 **Parallel Quantum‑Inspired Random Bit Generator**
 
-[German-Version](Docs/Readme-DE.md)
-
 QuantumSim‑QPRNG is an experimental high‑performance project that generates random bits using a quantum‑inspired simulation model.  
 
 It combines:
@@ -139,6 +137,14 @@ HPC focuses on:
 - deterministic and reproducible performance at scale  
 
 QuantumSim‑QPRNG uses HPC principles to generate millions of quantum‑inspired random bits with minimal overhead, leveraging parallel measurement, precomputed data streams, and optimized bit‑packing.
+
+---
+
+## 🇩🇪 German Version (Documentation)
+
+A full German‑language version of the documentation is available in:
+
+[docs/Readme-DE.md](docs/Readme-DE.md)
 
 ---
 
