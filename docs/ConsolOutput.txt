@@ -1,0 +1,94 @@
+=== QPRNG Bits ===
+Generated: 10 bits; t = 36 ms; ticks = 368'379
+
+=== QPRNG Bits ===
+Generated: 100 bits; t = 0 ms; ticks = 1'602
+
+=== QPRNG Bits ===
+Generated: 1'000 bits; t = 0 ms; ticks = 4'098
+
+=== QPRNG Bits ===
+Generated: 10'000 bits; t = 9 ms; ticks = 95'763
+
+=== QPRNG Bits ===
+Generated: 100'000 bits; t = 10 ms; ticks = 116'290
+
+=== QPRNG Bits ===
+Generated: 1'000'000 bits; t = 59 ms; ticks = 697'934
+
+=== QPRNG Bits ===
+Generated: 10'000'000 bits; t = 366 ms; ticks = 4'069'973
+
+=== QPRNG Bits ===
+Generated: 100'000'000 bits; t = 1251 ms; ticks = 15'514'210
+
+
+
+=== QPRNG Bytes ===
+Generated: 10 bytes; t = 1 ms; ticks = 12'019
+
+=== QPRNG Bytes ===
+Generated: 100 bytes; t = 0 ms; ticks = 1'607
+
+=== QPRNG Bytes ===
+Generated: 1'000 bytes; t = 1 ms; ticks = 10'273
+
+=== QPRNG Bytes ===
+Generated: 10'000 bytes; t = 2 ms; ticks = 22'380
+
+=== QPRNG Bytes ===
+Generated: 100'000 bytes; t = 12 ms; ticks = 145'340
+
+=== QPRNG Bytes ===
+Generated: 1'000'000 bytes; t = 123 ms; ticks = 1'432'739
+
+=== QPRNG Bytes ===
+Generated: 10'000'000 bytes; t = 1180 ms; ticks = 13'801'395
+
+
+
+Entropie Analyze Data Bits: size = 10'000'000
+*********************************************
+
+BitBias: p0 = 0.500024, p1 = 0.499976
+
+Count Runs: 4'998'365; delta = 1635
+
+Shannon Entropy per bit: 1.000000 (max 1.0)
+
+Autokorrelation (Bits):
+lag 1: 0.500164
+lag 2: 0.500006
+lag 3: 0.499887
+lag 4: 0.499777
+lag 5: 0.500289
+lag 6: 0.500093
+lag 7: 0.500154
+lag 8: 0.499982
+
+
+Entropie Analyze Data Bytes: size = 1'000'000
+*********************************************
+
+Byte-Histogramm + Entropie per Byte:
+Entropy per byte: 7.9998 (max 8.0)
+00: 3888
+01: 4004
+02: 3938
+03: 3918
+04: 3969
+05: 3958
+06: 3944
+07: 3906
+08: 3911
+09: 3804
+0A: 3808
+0B: 3834
+0C: 3884
+0D: 3894
+0E: 3816
+0F: 3865
+
+
+
+FINISH
