@@ -1,6 +1,6 @@
 # QuantumSim‑QPRNG  
 
-**Status**: ✅   
+**Status**: ⚠️ Early Development   
 **Version**: 0.0.1   
 **Last Updated**: 2026.06.08
 
