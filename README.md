@@ -127,6 +127,21 @@ var bytes = qprng.GenerateBytes(count);
 
 ---
 
+## ⚡ High‑Performance Computing (HPC)
+
+High‑Performance Computing refers to techniques and architectures designed to perform large‑scale computations at maximum efficiency.
+
+HPC focuses on:
+- parallel execution across multiple CPU cores  
+- efficient memory access and cache‑aware algorithms  
+- vectorized operations (SIMD)  
+- high‑throughput numerical processing  
+- deterministic and reproducible performance at scale  
+
+QuantumSim‑QPRNG uses HPC principles to generate millions of quantum‑inspired random bits with minimal overhead, leveraging parallel measurement, precomputed data streams, and optimized bit‑packing.
+
+---
+
 ## 📘 Quanteninformatik Script (German)
 
 The folder docs/Quanteninformatik contains a German‑language educational script covering:
@@ -162,21 +177,14 @@ Future extensions may include:
 
 ---
 
-## 🙌 Author
+## 🙌 Author & Lead Architect
+Developed by Michele Natale (2026)  
+Quantum simulation, HPC (High‑Performance Computing), and .NET performance.
 
-**Author & Lead Architect**  
+## 🔧 Maintainer
+Michele Natale (2026)  
+Maintenance, further development, bug fixing, and release management.
 
-*Developed by Michele Natale 2026*  
-- QPRNG-Q1 and Cryptography Engineering 
-- Concept, test architecture, documentation, implementation
-
-**Maintainer**  
-
-Michele Natale 2026  
-- Maintenance, further development, bug fixing, release management
-
-Exploring quantum simulation, HPC, and .NET performance.
-
-GitHub: [https://github.com/michelenatale](https://github.com/michelenatale)
+GitHub: [https://github.com/michelenatale](https://github.com/michelenatale](https://github.com/michelenatale)
 
 --- 
