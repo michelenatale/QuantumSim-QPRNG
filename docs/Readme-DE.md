@@ -142,7 +142,7 @@ QuantumSim-QPRNG nutzt HPC-Prinzipien, um Millionen quanteninspirierter Zufallsb
 
 ## 📘 Quanteninformatik‑Skript
 
-Im Ordner [docs/Script](docs/Script) befindet sich ein begleitendes Skript, das die Grundlagen der Quanteninformatik erklärt:
+Im Ordner [docs/Script](Script) befindet sich ein begleitendes Skript, das die Grundlagen der Quanteninformatik erklärt:
 - Qubits
 - Amplituden
 - Superposition
