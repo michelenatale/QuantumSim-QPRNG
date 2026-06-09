@@ -19,20 +19,20 @@ public sealed class QPRNG
     //zu bekommen: ∣𝜓⟩ = (1/√2) * (∣0⟩ + ∣1⟩)
     q.Apply(this.MHadamard);
 
-    //Messung ∣ψ⟩ = 1/(√2) ∣0⟩ + 1/(√2) ∣1⟩
+    //Messung ∣ψ⟩ = 1/√2 ∣0⟩ + 1/√2 ∣1⟩
     return q.Measure();
 
     //Nach der Messung
-    //a|0> + b|1> -->Messung--> |0>   oder   |1>
+    //a|0> + b|1> --> Messung --> |0>   oder   |1>
 
-    //Kollabierung: alle ursprüngliche Informationen
+    //Kollabierung: Alle ursprüngliche Informationen
     //zur Superposition verloren. Nur 0 oder 1 vorhanden.
   }
 
   public byte[] GenerateBits(
     int count, int batchsize = 1 << 15)
   {
-    // 1) Pre-produce doubles
+    // 1) Pre-Produce Doubles
     var dbls = PreGenerateDoublesParallel(count);
     DoubleStream.SetValues(dbls);
 

@@ -1,12 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
+    <Nullable>enable</Nullable>
     <OutputType>Exe</OutputType>
+    <Platforms>AnyCPU;x64</Platforms>
+    <ImplicitUsings>enable</ImplicitUsings>
     <TargetFramework>net10.0</TargetFramework>
     <RootNamespace>TestQPRNG_Q1</RootNamespace>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Platforms>AnyCPU;x64</Platforms>
+
+
+    <Product>© TestQPRNG-Q1 2026</Product>
+    <Authors>© Michele Natale 2026</Authors>
+    <Company>© Michele Natale 2026</Company>
+    <Description>
+      © TestQPRNG-Q1 2026 - QuantumSim‑QPRNG – Parallel Quantum‑Inspired Random Bit Generator
+    </Description>
+    <Copyright>© TestQPRNG-Q1 2026 created by © Michele Natale 2026.</Copyright>
   </PropertyGroup>
 
   <ItemGroup>
